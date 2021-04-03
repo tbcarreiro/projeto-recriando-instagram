@@ -8,4 +8,4 @@ Aprendi bastante e vi o quanto é necessário praticar!
 
 
 
-![](C:\Users\Thiago\Desktop\Git\projeto-recriando-instagram\img\Captura de tela 2021-04-02 212625.png)
+![](https://github.com/tbcarreiro/projeto-recriando-instagram/blob/master/img/Captura%20de%20tela%202021-04-02%20212625.png)
