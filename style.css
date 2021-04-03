@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,58 +7,67 @@
   font-size: 14px;
 }
 
-body{
+body {
   width: 100%;
   min-height: 100vh;
   padding: 0;
   margin: 0;
   background-color: #f9f9f9;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-.ig-geral{
+
+.ig-geral {
   display: flex;
   align-items: center;
-  justify-content:start;
-  width: 55%;
+  justify-content: center;
   height: 100vh;
 }
-.ig-esquerda{
+
+.ig-esquerda {
   display: flex;
   align-items: center;
-  justify-content:center;
-  width: 50%;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 300px;
 }
-.ig-esquerda img{
+
+.ig-esquerda img {
   height: 50rem;
 }
-.ig-direita{
+
+.ig-direita {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
+  min-width: 400px;
+  max-width: 400px;
   flex-direction: column;
   min-height: 42rem;
   margin-top: 30px;
 }
-.entrar{
+
+.entrar {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: white;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   padding: 1.3rem 0;
   border: 1px solid lightgray;
 }
-.entrar:nth-child(1){
+
+.entrar:nth-child(1) {
   min-height: 27rem;
 }
-.ig-logo{
+
+.ig-logo {
   height: 3.5rem;
   margin: 10px 0 30px 0;
 }
-.entrar input{
+
+.entrar input {
   background-color: #f9f9f9;
   padding: 11px;
   width: 75%;
@@ -67,9 +76,9 @@ body{
   border-radius: 3px;
   border-width: thin;
   border-color: lightgray;
-
 }
-.botao-entrar{
+
+.botao-entrar {
   text-align: center;
   background-color: #0095f6;
   color: #ffffff;
@@ -77,60 +86,68 @@ body{
   border-radius: 4px;
   width: 75%;
 }
-.separador{
+
+.separador {
   width: 75%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 5px;
 }
-.separador hr{
+
+.separador hr {
   width: 40%;
   border: solid lightgray;
   border-width: 2px 0 0 0;
 }
-.separador span{
+
+.separador span {
   font-family: monospace;
   color: darkgray;
   font-weight: bold;
 }
-.entrar-com-face{
+
+.entrar-com-face {
   width: 75%;
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   margin: 10px 0;
 }
-.entrar-com-face a{
+
+.entrar-com-face a {
   color: #3b5998;
   font-weight: bold;
   margin-left: 10px;
-}
-.icone-face{
-  height: 16px;
-  width: 16px;
   background-image: url('img/face.svg');
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-left: 25px;
 }
-.esqueceu-senha{
+
+.esqueceu-senha {
   font-size: 11px;
   color: #3b5998;
 }
-.entrar:nth-child(2){
+
+.entrar:nth-child(2) {
   flex-direction: row;
   justify-content: center;
 }
-.entrar p{
+
+.entrar p {
   font-weight: normal;
   font-size: 13px;
   font-family: verdana;
 }
-.cadastre{
+
+.cadastre {
   color: #0095f6;
   margin-left: 5px;
   font-family: verdana;
 }
-.baixar-app{
+
+.baixar-app {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,62 +155,39 @@ body{
   width: 100%;
   padding: 1.3rem 0;
 }
-.baixar-app p{
+
+.baixar-app p {
   font-size: 13px;
   font-family: verdana;
 }
-.baixar{
-  /* display: flex;
-  align-items: center;
-  justify-content:space-around;
-  width: 100%; */
+
+.baixar {
   display: flex;
   width: 100%;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
-.loja-baixar{
+
+.loja-baixar {
   height: 3rem;
   width: 10rem;
   background-size: cover;
 }
+
 .loja-baixar:nth-child(1) {
-    background-image: url('img/apple-button.png');
-    margin-right: 5px;
+  background-image: url('img/apple-button.png');
+  margin-right: 5px;
 }
+
 .loja-baixar:nth-child(2) {
-    background-image: url('img/googleplay-button.png');
-    margin-left: 5px;
+  background-image: url('img/googleplay-button.png');
+  margin-left: 5px;
 }
 
 /* media queries */
-
-
-@media (max-width: 1024px) {
-    .ig-geral {
-        width: 90%;
-    }
-}
-
 @media (max-width: 720px) {
-    body {
-        background-color: #f9f9f9;
-    }
-
-    .ig-geral {
-        width: 90%;
-    }
-
-    .ig-esquerda {
-        display: none;
-    }
-
-    .ig-direita {
-        width: 100%;
-    }
-
-    .entrar {
-        border: 1px solid transparent;
-    }
+  .ig-esquerda {
+    display: none;
+  }
 }
